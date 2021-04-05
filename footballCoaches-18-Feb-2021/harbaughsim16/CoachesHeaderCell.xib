@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="OP2-aR-ZJX" customClass="CoachesHeaderCell">
+            <rect key="frame" x="0.0" y="0.0" width="398" height="89"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gGb-f1-4vB">
+                    <rect key="frame" x="16" y="34" width="306" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="PUg-vS-aB6"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="drT-5O-ERi">
+                    <rect key="frame" x="338" y="0.0" width="60" height="89"/>
+                    <color key="backgroundColor" red="0.19215686269999999" green="0.32156862749999998" blue="0.1137254902" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="a2o-CX-B29"/>
+                    </constraints>
+                    <state key="normal" title="Hire">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rOG-JN-ifD">
+                    <rect key="frame" x="0.0" y="85" width="398" height="4"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="4" id="7hj-9s-YGe"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="xzQ-mk-iHD"/>
+            <color key="backgroundColor" red="0.23921568630000001" green="0.70196078429999997" blue="0.61960784310000006" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="gGb-f1-4vB" firstAttribute="centerY" secondItem="OP2-aR-ZJX" secondAttribute="centerY" id="A6f-eP-TaC"/>
+                <constraint firstItem="drT-5O-ERi" firstAttribute="leading" secondItem="gGb-f1-4vB" secondAttribute="trailing" constant="16" id="Cs8-kT-MgI"/>
+                <constraint firstItem="xzQ-mk-iHD" firstAttribute="trailing" secondItem="drT-5O-ERi" secondAttribute="trailing" id="HrU-g0-y6O"/>
+                <constraint firstItem="rOG-JN-ifD" firstAttribute="leading" secondItem="xzQ-mk-iHD" secondAttribute="leading" id="IDf-lI-tMB"/>
+                <constraint firstItem="xzQ-mk-iHD" firstAttribute="bottom" secondItem="drT-5O-ERi" secondAttribute="bottom" id="JZr-59-KAu"/>
+                <constraint firstItem="gGb-f1-4vB" firstAttribute="leading" secondItem="OP2-aR-ZJX" secondAttribute="leading" constant="16" id="mdT-Zb-JIs"/>
+                <constraint firstItem="xzQ-mk-iHD" firstAttribute="trailing" secondItem="rOG-JN-ifD" secondAttribute="trailing" id="puJ-HZ-11b"/>
+                <constraint firstAttribute="bottom" secondItem="rOG-JN-ifD" secondAttribute="bottom" id="rp4-Qb-ZJc"/>
+                <constraint firstItem="drT-5O-ERi" firstAttribute="top" secondItem="OP2-aR-ZJX" secondAttribute="top" id="zqC-gY-uRL"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="bottomView" destination="rOG-JN-ifD" id="dHm-GF-MW1"/>
+                <outlet property="coacheHeaderLabel" destination="gGb-f1-4vB" id="V1A-mS-zWV"/>
+                <outlet property="hireBtn" destination="drT-5O-ERi" id="FgQ-pn-eAc"/>
+            </connections>
+            <point key="canvasLocation" x="-172.46376811594203" y="182.47767857142856"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

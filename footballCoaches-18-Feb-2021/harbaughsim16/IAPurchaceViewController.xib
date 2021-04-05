@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="IAPurchaceViewController">
+            <connections>
+                <outlet property="descriptionLbl" destination="dyI-tW-fb1" id="bRv-to-SIf"/>
+                <outlet property="tableView" destination="p9g-p3-Czq" id="3aG-LT-vdg"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hIa-hc-vPB">
+                    <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="p9g-p3-Czq">
+                            <rect key="frame" x="0.0" y="181.5" width="414" height="670.5"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        </tableView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JLq-M6-HCC">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CSh-8z-Rc5">
+                                    <rect key="frame" x="18" y="8" width="55" height="33"/>
+                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                    <state key="normal" title="Cancel"/>
+                                    <connections>
+                                        <action selector="cancelBtnAction:" destination="-1" eventType="touchUpInside" id="z9c-cj-yaS"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fSZ-Je-V82">
+                                    <rect key="frame" x="245" y="8" width="151" height="33"/>
+                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                    <state key="normal" title="Restored Purchase"/>
+                                    <connections>
+                                        <action selector="restoreBtnAction:" destination="-1" eventType="touchUpInside" id="uQT-YL-nyF"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="7Bo-vX-eIZ"/>
+                                <constraint firstAttribute="trailing" secondItem="fSZ-Je-V82" secondAttribute="trailing" constant="18" id="el7-Zi-uXg"/>
+                                <constraint firstItem="fSZ-Je-V82" firstAttribute="top" secondItem="JLq-M6-HCC" secondAttribute="top" constant="8" id="h1X-c8-blM"/>
+                                <constraint firstItem="CSh-8z-Rc5" firstAttribute="leading" secondItem="JLq-M6-HCC" secondAttribute="leading" constant="18" id="imQ-FS-JXH"/>
+                                <constraint firstItem="CSh-8z-Rc5" firstAttribute="top" secondItem="JLq-M6-HCC" secondAttribute="top" constant="8" id="oEC-Fe-ufi"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dyI-tW-fb1">
+                            <rect key="frame" x="18" y="60" width="378" height="101.5"/>
+                            <string key="text">Build a dynasty by hiring the best coaches in the nation.
+
+Each package allows you to improve your team to D1 status and more.</string>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="dyI-tW-fb1" firstAttribute="leading" secondItem="hIa-hc-vPB" secondAttribute="leading" constant="18" id="2jQ-OR-F33"/>
+                        <constraint firstItem="p9g-p3-Czq" firstAttribute="leading" secondItem="hIa-hc-vPB" secondAttribute="leading" id="4m9-PJ-swp"/>
+                        <constraint firstAttribute="trailing" secondItem="JLq-M6-HCC" secondAttribute="trailing" id="8rJ-19-bRU"/>
+                        <constraint firstItem="p9g-p3-Czq" firstAttribute="top" secondItem="dyI-tW-fb1" secondAttribute="bottom" constant="20" id="HRB-Ct-RTO"/>
+                        <constraint firstAttribute="trailing" secondItem="dyI-tW-fb1" secondAttribute="trailing" constant="18" id="Hwh-dL-f7o"/>
+                        <constraint firstAttribute="bottom" secondItem="p9g-p3-Czq" secondAttribute="bottom" id="XCY-4n-u1w"/>
+                        <constraint firstItem="JLq-M6-HCC" firstAttribute="top" secondItem="hIa-hc-vPB" secondAttribute="top" id="Zzk-Cz-nd2"/>
+                        <constraint firstAttribute="trailing" secondItem="p9g-p3-Czq" secondAttribute="trailing" id="dj1-0q-hiY"/>
+                        <constraint firstItem="dyI-tW-fb1" firstAttribute="top" secondItem="JLq-M6-HCC" secondAttribute="bottom" constant="10" id="hah-rZ-t3u"/>
+                        <constraint firstItem="JLq-M6-HCC" firstAttribute="leading" secondItem="hIa-hc-vPB" secondAttribute="leading" id="itD-Y5-63M"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="hIa-hc-vPB" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" id="3Sd-EC-L6v"/>
+                <constraint firstItem="hIa-hc-vPB" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="49c-R8-aiE"/>
+                <constraint firstItem="hIa-hc-vPB" firstAttribute="trailing" secondItem="Q5M-cg-NOt" secondAttribute="trailing" id="CNA-8K-MsK"/>
+                <constraint firstAttribute="bottom" secondItem="hIa-hc-vPB" secondAttribute="bottom" id="XLQ-Z8-Hwc"/>
+            </constraints>
+            <point key="canvasLocation" x="-71.014492753623188" y="115.84821428571428"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

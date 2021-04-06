@@ -28,6 +28,7 @@
 		0AB299D92572726F006B9233 /* CoachesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AB299D72572726F006B9233 /* CoachesCell.xib */; };
 		0AB299DF25727EF5006B9233 /* CoachesHeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AB299DD25727EF5006B9233 /* CoachesHeaderCell.m */; };
 		0AB299E025727EF5006B9233 /* CoachesHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AB299DE25727EF5006B9233 /* CoachesHeaderCell.xib */; };
+		351E541E261C90B5000DD523 /* football_coach.png in Resources */ = {isa = PBXBuildFile; fileRef = 351E541D261C90B5000DD523 /* football_coach.png */; };
 		353F9DC225F381F300893B00 /* CoachTeamStrategyPopup.m in Sources */ = {isa = PBXBuildFile; fileRef = 353F9DC025F381F300893B00 /* CoachTeamStrategyPopup.m */; };
 		353F9DC325F381F300893B00 /* CoachTeamStrategyPopup.xib in Resources */ = {isa = PBXBuildFile; fileRef = 353F9DC125F381F300893B00 /* CoachTeamStrategyPopup.xib */; };
 		355035E32605154300EF96D6 /* IAPurchaceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 355035E12605154300EF96D6 /* IAPurchaceViewController.m */; };
@@ -205,6 +206,7 @@
 		0AB299DC25727EF5006B9233 /* CoachesHeaderCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoachesHeaderCell.h; sourceTree = "<group>"; };
 		0AB299DD25727EF5006B9233 /* CoachesHeaderCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoachesHeaderCell.m; sourceTree = "<group>"; };
 		0AB299DE25727EF5006B9233 /* CoachesHeaderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoachesHeaderCell.xib; sourceTree = "<group>"; };
+		351E541D261C90B5000DD523 /* football_coach.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = football_coach.png; sourceTree = "<group>"; };
 		353F9DBF25F381F300893B00 /* CoachTeamStrategyPopup.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoachTeamStrategyPopup.h; sourceTree = "<group>"; };
 		353F9DC025F381F300893B00 /* CoachTeamStrategyPopup.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoachTeamStrategyPopup.m; sourceTree = "<group>"; };
 		353F9DC125F381F300893B00 /* CoachTeamStrategyPopup.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoachTeamStrategyPopup.xib; sourceTree = "<group>"; };
@@ -462,6 +464,7 @@
 		07C465C92558E84D002B1819 /* FootBallCoachNewIcons */ = {
 			isa = PBXGroup;
 			children = (
+				351E541D261C90B5000DD523 /* football_coach.png */,
 				07361854255C0703004B917A /* footballlogonew.png */,
 				07C465CA2558E84D002B1819 /* depthChart.png */,
 				07C465CB2558E84D002B1819 /* home.png */,
@@ -1112,6 +1115,7 @@
 				07057068255AE9F70063AA1F /* cross.png in Resources */,
 				75A86C901C9C7AA80034140C /* roster@3x.png in Resources */,
 				7571DD2D1C9CCD8100E67080 /* HBScheduleCell.xib in Resources */,
+				351E541E261C90B5000DD523 /* football_coach.png in Resources */,
 				755BBC8C1CA03252001A8314 /* HBRecruitCell.xib in Resources */,
 				75924A2E1C99CCC000B165AD /* Assets.xcassets in Resources */,
 				35B67FDC25E8F72C00144F91 /* CoachesListViewController.xib in Resources */,
